@@ -1034,43 +1034,17 @@
         game.style.transition = 'all 0.4s ease-out';
       });
       
-     // Add event listeners to all download buttons to show content locker
-     const downloadButtons = document.querySelectorAll('.btn-download');
-      downloadButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-          e.preventDefault();
-          
-          // Create and inject the content locker scripts when button is clicked
-          const noscriptTag = document.createElement('noscript');
-          const metaTag = document.createElement('meta');
-          metaTag.setAttribute('http-equiv', 'refresh');
-          metaTag.setAttribute('content', '0;url=https://locked4.com/noscript');
-          noscriptTag.appendChild(metaTag);
-          document.head.appendChild(noscriptTag);
-          
-          // Add ogblock variable
-          const ogblockScript = document.createElement('script');
-          ogblockScript.type = 'text/javascript';
-          ogblockScript.text = 'var ogblock=true;';
-          document.head.appendChild(ogblockScript);
-                // Add main content locker script
-                const ogjsScript = document.createElement('script');
-          ogjsScript.type = 'text/javascript';
-          ogjsScript.id = 'ogjs';
-          ogjsScript.src = 'https://locked4.com/cl/js/kl1e89';
-          document.head.appendChild(ogjsScript);
-          
-          // Direct redirect to locker without adblock check
-          window.location.href = 'https://locked4.com/cl/js/kl1e89';
-          
-          // Remove the adblock check script
-          // const redirectScript = document.createElement('script');
-          // redirectScript.type = 'text/javascript';
-          // redirectScript.text = 'if(ogblock) window.location.href = "https://locked4.com/cl/js/kl1e89";';
-          // document.head.appendChild(redirectScript);
+        // Add event listeners to all download buttons to show content locker
+        const downloadButtons = document.querySelectorAll('.btn-download');
+        downloadButtons.forEach(button => {
+          button.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Direct redirect to the specified link
+            window.location.href = 'https://appinstallcheck.com/cl/i/kl1e89';
+          });
         });
       });
-    });
   </script>
   </script>
 </body>
