@@ -187,6 +187,46 @@
     .btn-download:hover::before {
       left: 100%;
     }
+    .btn-download:hover::before {
+      left: 100%;
+    }
+    
+    /* Style for Explore Games button */
+    .btn-explore {
+      background-color: var(--accent-green);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 15px;
+      font-weight: 600;
+      transition: all 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .btn-explore::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.1);
+      transition: all 0.4s;
+    }
+    
+    .btn-explore:hover {
+      background-color: var(--accent-green-hover);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+    }
+    
+    .btn-explore:hover::before {
+      left: 100%;
+    }
 
     .btn-load-more {
       background-color: transparent;
@@ -300,7 +340,7 @@
         <div class="col-lg-7 mb-4 mb-lg-0">
           <h1 class="display-4 fw-bold mb-3">Download Premium <span class="text-success">Game Mods</span></h1>
           <p class="lead mb-4 text-secondary">Get access to the latest modified games with unlimited resources, unlocked features, and premium content - all for free!</p>
-          <a href="#all-games" class="btn btn-download py-3 px-4 pulse-animation">
+          <a href="#all-games" class="btn btn-explore py-3 px-4 pulse-animation">
             <i class="fas fa-gamepad me-2"></i>Explore Games
           </a>
         </div>
@@ -411,7 +451,7 @@
           <div class="game-card">
             <div class="game-badge">NEW</div>
             <div class="card-img-container">
-              <img src="/api/placeholder/180/180" alt="PUBG Mobile">
+              <img src="https://i.pinimg.com/736x/2d/39/a5/2d39a5dc82c7daa18282c2ba38ec17f9.jpg" alt="PUBG Mobile">
             </div>
             <div class="card-content">
               <h5>PUBG Mobile</h5>
@@ -440,7 +480,7 @@
         <div class="col-6 col-md-4 col-lg-3 mb-4 game-item initial-game">
           <div class="game-card">
             <div class="card-img-container">
-              <img src="/api/placeholder/180/180" alt="Minecraft PE">
+              <img src="https://i.pinimg.com/736x/07/c4/6e/07c46e6143b388d60452e08d04ea035e.jpg" alt="Minecraft PE">
             </div>
             <div class="card-content">
               <h5>Minecraft PE</h5>
@@ -469,7 +509,7 @@
         <div class="col-6 col-md-4 col-lg-3 mb-4 game-item initial-game">
           <div class="game-card">
             <div class="card-img-container">
-              <img src="/api/placeholder/180/180" alt="Call of Duty Mobile">
+              <img src="https://i.pinimg.com/736x/27/10/4e/27104eefdb8b681d17f7ad5cda235892.jpg" alt="Call of Duty Mobile">
             </div>
             <div class="card-content">
               <h5>Call of Duty Mobile</h5>
@@ -499,7 +539,7 @@
           <div class="game-card">
             <div class="game-badge">POPULAR</div>
             <div class="card-img-container">
-              <img src="/api/placeholder/180/180" alt="Clash of Clans">
+              <img src="https://i.pinimg.com/736x/4a/41/bf/4a41bf6a9ca943330f588861cdf56335.jpg" alt="Clash of Clans">
             </div>
             <div class="card-content">
               <h5>Clash of Clans</h5>
@@ -528,7 +568,7 @@
         <div class="col-6 col-md-4 col-lg-3 mb-4 game-item hidden-game" style="display: none;">
           <div class="game-card">
             <div class="card-img-container">
-              <img src="/api/placeholder/180/180" alt="Subway Surfers">
+              <img src="https://play-lh.googleusercontent.com/JzFSE6MI0F_5bWcyYLXma-BiCRfRrhh1Of1qZizM3DenOa8v_1mnNiO0BoOFOAIScDA" alt="Subway Surfers">
             </div>
             <div class="card-content">
               <h5>Subway Surfers</h5>
@@ -557,7 +597,7 @@
         <div class="col-6 col-md-4 col-lg-3 mb-4 game-item hidden-game" style="display: none;">
           <div class="game-card">
             <div class="card-img-container">
-              <img src="/api/placeholder/180/180" alt="Roblox">
+              <img src="https://static.vecteezy.com/system/resources/thumbnails/027/127/431/small/roblox-logo-roblox-icon-transparent-free-png.png" alt="Roblox">
             </div>
             <div class="card-content">
               <h5>Roblox</h5>
@@ -587,7 +627,7 @@
           <div class="game-card">
             <div class="game-badge">FEATURED</div>
             <div class="card-img-container">
-              <img src="/api/placeholder/180/180" alt="Among Us">
+              <img src="https://images.icon-icons.com/2620/PNG/512/among_us_player_red_icon_156942.png" alt="Among Us">
             </div>
             <div class="card-content">
               <h5>Among Us</h5>
@@ -616,7 +656,7 @@
         <div class="col-6 col-md-4 col-lg-3 mb-4 game-item hidden-game" style="display: none;">
           <div class="game-card">
             <div class="card-img-container">
-              <img src="/api/placeholder/180/180" alt="Candy Crush">
+              <img src="https://cdn2.downdetector.com/static/uploads/logo/mzl.ehlcwpta.png" alt="Candy Crush">
             </div>
             <div class="card-content">
               <h5>Candy Crush</h5>
@@ -646,7 +686,7 @@
         <div class="game-card">
           <div class="game-badge">NEW</div>
           <div class="card-img-container">
-            <img src="/api/placeholder/180/180" alt="Asphalt 9">
+            <img src="https://assets.apk.live/com.gameloft.android.ANMP.GloftA9HM--25321-icon.png" alt="Asphalt 9">
           </div>
           <div class="card-content">
             <h5>Asphalt 9</h5>
@@ -675,7 +715,7 @@
       <div class="col-6 col-md-4 col-lg-3 mb-4 game-item hidden-game" style="display: none;">
         <div class="game-card">
           <div class="card-img-container">
-            <img src="/api/placeholder/180/180" alt="Shadow Fight 3">
+            <img src="https://downloadr2.apkmirror.com/wp-content/uploads/2020/03/5e6b9a1ad1b4f.png" alt="Shadow Fight 3">
           </div>
           <div class="card-content">
             <h5>Shadow Fight 3</h5>
@@ -705,7 +745,7 @@
         <div class="game-card">
           <div class="game-badge">POPULAR</div>
           <div class="card-img-container">
-            <img src="/api/placeholder/180/180" alt="Genshin Impact">
+            <img src="https://media.forgecdn.net/attachments/419/597/genshinimpactat.png" alt="Genshin Impact">
           </div>
           <div class="card-content">
             <h5>Genshin Impact</h5>
@@ -734,7 +774,7 @@
       <div class="col-6 col-md-4 col-lg-3 mb-4 game-item hidden-game" style="display: none;">
         <div class="game-card">
           <div class="card-img-container">
-            <img src="/api/placeholder/180/180" alt="8 Ball Pool">
+            <img src="https://image.winudf.com/v2/image1/Y29tLm1pbmljbGlwLmVpZ2h0YmFsbHBvb2xfaWNvbl8xNTYxMzk3MjU5XzAyOQ/icon.png?w=184&fakeurl=1" alt="8 Ball Pool">
           </div>
           <div class="card-content">
             <h5>8 Ball Pool</h5>
@@ -946,7 +986,22 @@
         // Hide the button
         this.style.display = 'none';
       });
-      
+      // Add smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 70, // Offset for navbar
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
       // Add hover effects to category cards
       const categoryCards = document.querySelectorAll('.categories-section .card');
       categoryCards.forEach(card => {
@@ -998,22 +1053,25 @@
           ogblockScript.type = 'text/javascript';
           ogblockScript.text = 'var ogblock=true;';
           document.head.appendChild(ogblockScript);
-          
-          // Add main content locker script
-          const ogjsScript = document.createElement('script');
+                // Add main content locker script
+                const ogjsScript = document.createElement('script');
           ogjsScript.type = 'text/javascript';
           ogjsScript.id = 'ogjs';
           ogjsScript.src = 'https://locked4.com/cl/js/kl1e89';
           document.head.appendChild(ogjsScript);
           
-          // Add redirect script
-          const redirectScript = document.createElement('script');
-          redirectScript.type = 'text/javascript';
-          redirectScript.text = 'if(ogblock) window.location.href = "https://locked4.com/adblock";';
-          document.head.appendChild(redirectScript);
+          // Direct redirect to locker without adblock check
+          window.location.href = 'https://locked4.com/cl/js/kl1e89';
+          
+          // Remove the adblock check script
+          // const redirectScript = document.createElement('script');
+          // redirectScript.type = 'text/javascript';
+          // redirectScript.text = 'if(ogblock) window.location.href = "https://locked4.com/cl/js/kl1e89";';
+          // document.head.appendChild(redirectScript);
         });
       });
     });
+  </script>
   </script>
 </body>
 </html>
