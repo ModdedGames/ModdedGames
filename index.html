@@ -608,11 +608,10 @@
         height: 150px;
       }
     }
-    /* Search Bar Styles */
-    .search-container {
+        /* Search Bar Styles */
+        .search-container {
       position: relative;
-      width:300px;
-      transition: all 0.3s ease;
+      width: 300px;
     }
     
     .search-wrapper {
@@ -736,32 +735,6 @@
       .search-container {
         width: 100%;
         margin-top: 10px;
-      }
-    }
-    /* Mobile-specific search styles */
-    @media (max-width: 767px) {
-      .search-container {
-        width: 40px;
-        overflow: hidden;
-      }
-      
-      .search-container.expanded {
-        width: 160px;
-      }
-      
-      .search-input {
-        padding-left: 30px;
-      }
-      
-      .search-button {
-        left: 5px;
-        right: auto;
-        z-index: 2;
-      }
-      
-      .search-results {
-        width: 200px;
-        right: -80px;
       }
     }
   </style>
@@ -1593,10 +1566,7 @@
           
         });
  // Search functionality
-// Get search input element (already declared above)
-if (!searchInput) {
-  const searchInput = document.getElementById('gameSearch');
-}
+ const searchInput = document.getElementById('gameSearch');
     const searchResults = document.getElementById('searchResults');
     
     // Get all game cards
@@ -1706,37 +1676,6 @@ if (!searchInput) {
         searchResults.classList.remove('active');
       }
     });
-     // Mobile search toggle functionality
-     const searchContainer = document.querySelector('.search-container');
-    const searchButton = document.querySelector('.search-button');
-    const searchInput = document.getElementById('gameSearch');
-    
-    if (window.innerWidth <= 767) {
-      // For mobile devices
-      searchButton.addEventListener('click', function(e) {
-        if (!searchContainer.classList.contains('expanded')) {
-          e.preventDefault();
-          searchContainer.classList.add('expanded');
-          setTimeout(() => {
-            searchInput.focus();
-          }, 300);
-        }
-      });
-      
-      // Close expanded search when clicking outside
-      document.addEventListener('click', function(e) {
-        if (!searchContainer.contains(e.target) && searchContainer.classList.contains('expanded') && searchInput.value === '') {
-          searchContainer.classList.remove('expanded');
-        }
-      });
-      
-      // Close expanded search when pressing Escape
-      document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && searchContainer.classList.contains('expanded')) {
-          searchContainer.classList.remove('expanded');
-        }
-      });
-    }
       
   </script>
   </script>
